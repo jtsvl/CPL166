@@ -1,0 +1,16 @@
+namespace CPL166MTA.cpl166db;
+
+/*@@layout{"layoutInfo":{"x":-329,"y":-87}}*/
+context cpl166f {
+    /*@@layout{"layoutInfo":{"x":-349,"y":-23}}*/
+    entity world {
+        key continent : String(100);
+    };
+
+    entity country {
+        key name   : String(100);
+            partof : association[0..1] to cpl166f.world;
+    }
+};
+
+/*@@layout{"layoutInfo":{"x":-522,"y":-41.5}}*/

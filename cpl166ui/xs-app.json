@@ -1,0 +1,11 @@
+{
+  "welcomeFile": "index.html",
+  "authenticationMethod": "route",
+	"routes": [{
+		"source": "^/euro.xsodata/.*$", 
+		"destination": "cpl166js_be"
+	}, {
+         "source": ".*\\.xsjs",
+         "destination": "cpl166js_be"
+     }]
+}
